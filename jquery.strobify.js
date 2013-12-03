@@ -20,7 +20,6 @@
 
 			interval = setInterval (function () {
 				pointer = (pointer >= (settings.colors.length - 1)) ? 0 : pointer + 1;
-				console.log ("pointer -> " + pointer);
 				dom.css ('background', settings.colors [pointer]);
 			}, settings.speed);
 		}
